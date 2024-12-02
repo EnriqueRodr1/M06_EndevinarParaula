@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Joc d'Endevinar Paraula</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Adivina la palabra secreta</h1>
+
+    <!-- Secció de configuració del joc -->
+    <section id="configuracio-joc">
+        <input type="password" id="paraula-secreta" placeholder="Introdueix una paraula">
+        <button id="toggle-password">Visualizar</button>
+        <button id="comencar-partida">Comenzar partida</button>
+        <p id="missatge-error"></p>
+    </section>
+
+    <!-- Mostra el progrés de la partida -->
+    <section id="progres-partida">
+        <div id="paraula-mostrada"></div>
+        <div id="missatge-final"></div>
+    </section>
+
+    <!-- Botons de lletres (es creen dinàmicament) -->
+    <div id="botons-lletres"></div>
+
+    <!-- Secció d'informació del jugador -->
+    <section id="info-jugador">
+        <p>Puntos: <span id="punts"></span></p>
+        <p>Partidas ganadas: <span id="partides-guanyades"></span></p>
+        <p>Total partidas: <span id="total-partides"></span></p>
+        <p>Partida con mas puntos: <span id="millor-partida"></span></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
